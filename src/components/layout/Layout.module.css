@@ -1,0 +1,16 @@
+.main {
+  margin: auto 100px;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 1280px) {
+  .main {
+    margin: auto 300px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main {
+    margin: auto 600px;
+  }
+}

@@ -1,0 +1,22 @@
+.item {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
+  padding: 20px;
+}
+
+.actions button {
+  width: 120px;
+  height: 40px;
+}
