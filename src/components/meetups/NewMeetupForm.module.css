@@ -25,16 +25,5 @@
 
 .actions {
   text-align: right;
-  margin-top: 20px; 
-}
-
-.actions button {
-  background-color: #701b30;
-  color: #fff;
-  font-weight: bold;
-  width: 200px;
-  height: 50px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
+  margin-top: 20px;
 }

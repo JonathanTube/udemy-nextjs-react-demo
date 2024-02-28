@@ -5,6 +5,15 @@
   background-color: #701b30;
   color: #fff;
   height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navPlaceholder {
+  height: 120px;
+  width: 100%;
 }
 
 .title {

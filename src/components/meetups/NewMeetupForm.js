@@ -4,7 +4,7 @@ import classes from "./NewMeetupForm.module.css"
 
 const defaultData = {
   image:
-    "https://e3.365dm.com/24/02/2048x1152/skynews-emily-wheeler-furnishing-futures_6465437.jpg?20240222162317",
+    "https://img2.baidu.com/it/u=3999937652,1081321308&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
   address: "Sunday 25 February 2024 08:57, UK",
   description:
     "When families escaping domestic violence are rehoused by their local council, properties are often stripped of all white goods, furniture, and flooring for health and safety reasons, says Emily Wheeler, founder of the charity Furnishing Futures.",
