@@ -1,32 +1,31 @@
 import MeetupsList from "../components/meetups/MeetupsList"
 import { useEffect, useState } from "react"
+import useSWR from "swr"
+
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
 function AllMeetups() {
-  const [isLoading, setIsLoading] = useState()
+  const { data } = useSWR(
+    "https://react-getting-started-43908-default-rtdb.asia-southeast1.firebasedatabase.app/meetups.json",
+    fetcher
+  )
+
+  const [isLoading, setIsLoading] = useState(true)
   const [meetups, setMeetups] = useState([])
 
-  const loadData = async () => {
+  useEffect(() => {
     setIsLoading(true)
-    const db = "meetups.json"
-    const url = `https://react-getting-started-43908-default-rtdb.asia-southeast1.firebasedatabase.app/${db}`
-    const response = await fetch(url)
-    const json = await response.json()
-    // console.log(json)
     let items = []
-    for (let key in json) {
+    for (let key in data) {
       let item = {
         id: key,
-        ...json[key],
+        ...data[key],
       }
       items.push(item)
     }
     setMeetups(items)
     setIsLoading(false)
-  }
-
-  useEffect(() => {
-    loadData()
-  }, [])
+  }, [data])
 
   if (isLoading) {
     return (
